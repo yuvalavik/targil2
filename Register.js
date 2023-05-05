@@ -21,54 +21,12 @@ function Register() {
           <div className="card">
             <h2>Register</h2>
             <form>
-              <div className="form-group">
-                <label htmlFor="name">
-                  <span className="glyphicon glyphicon-user" /> Username:
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Enter name"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  <span className="glyphicon glyphicon-lock" /> Password:
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  placeholder="Enter password"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="confirm-password">
-                  <span className="glyphicon glyphicon-lock" /> Confirm Password:
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="confirm-password"
-                  placeholder="Confirm password"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="display-name">
-                  <span className="glyphicon glyphicon-user" /> Display name:
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="display-name"
-                  placeholder="Display name"
-                  required=""
-                />
-              </div>
+            <Inputfield itype = "text" id="name" iplaceholder="Enter name" ilabel = "Username" iicon = "glyphicon glyphicon-user" />
+            <Inputfield itype = "password" id="password" iplaceholder="Enter password" ilabel = "password" iicon = "glyphicon glyphicon-lock" />
+            <Inputfield itype = "password" id="confirm-password" iplaceholder="Confirm password" ilabel = "confirm-password" iicon = "glyphicon glyphicon-lock" />
+            <Inputfield itype = "text" id="display-name" iplaceholder="Display name" ilabel = "Display name" iicon = "glyphicon glyphicon-user" />
+        
+              
               <div className="form-group">
                 <label htmlFor="picture">
                   <span className="glyphicon glyphicon-picture" /> Picture:
