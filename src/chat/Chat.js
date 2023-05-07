@@ -4,6 +4,7 @@ import Profile from '../images/profile.png';
 import Logout from '../images/logout.png';
 import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
+import Logoutbtn from '../logoutbtn/Logoutbtn';
 
 function Chat() {
   return (
@@ -13,12 +14,7 @@ function Chat() {
   <center>
     <h1 style={{ fontSize: 60 }}>Friends</h1>
   </center>
-  <a href="loginFrame.html">
-
-
-  <img src={Logout} className="button" alt="Log out of your account" />
-
-  </a>
+  <Logoutbtn />
   <div className="container">
     <div className="row">
       <div className="col-md-5 padd">
