@@ -1,4 +1,4 @@
-function Chatslist({iname, itime, iicon}){
+function Chatslist({iname, itime, iicon, iclass}){
     return(
         <a
         href="#"

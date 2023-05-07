@@ -323,11 +323,7 @@ time[datetime] {
 
 
 
-/* .container{
 
-  max-width: 57%;
-
-} */
 .container {
   display: flex;
   justify-content: center;
