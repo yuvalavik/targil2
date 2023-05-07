@@ -73,6 +73,7 @@ body {
   margin-left: 12% !important;
 
   margin-right: 12% !important;
+  min-height: 70vh;
   
 
 }
@@ -213,7 +214,7 @@ time[datetime] {
 
 .me{
 
-  background-color:#ced4da;
+  background-color:#ced4da !important;
 
   height: 72px;
 
@@ -359,7 +360,7 @@ time[datetime] {
 
 .input-group{
 
-  position:absolute;
+  position:absolute !important;
 
   bottom:0;
 
