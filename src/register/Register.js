@@ -1,6 +1,7 @@
 import './Register.css';
 import Inputfield from '../inputfield/Inputfiled';
 import friends from '../images/friends.jpeg';
+import Subbutton from '../subbutton/Subbuttun';
 
 function Register() {
   return (
@@ -51,13 +52,7 @@ function Register() {
                 </div>
               </div>
               <br />
-              <div className="row">
-                <div className="col-md-6 col-md-offset-3">
-                  <button type="submit" className="btn btn-primary btn-block">
-                    Register
-                  </button>
-                </div>
-              </div>
+              <Subbutton itype = "Register"/>
               <center>
                 <p>
                   Already registered? <a href="loginFrame.html">Click here</a> to
