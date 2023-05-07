@@ -44,6 +44,7 @@ function Register() {
                 <div className="col-md-6 col-md-offset-3">
                   <img
                     src={friends}
+                    id="friendspic"
                     alt="Friends"
                     className="img-responsive center-block"
                   />
