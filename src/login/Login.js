@@ -1,11 +1,7 @@
-<<<<<<<< HEAD:src/App/App.js
-import './App.css';
-import Inputfield from '../inputfield/Inputfiled';
- import sky from './../sky.jpg'
-========
+
 import './Login.css';
 import Inputfield from '../inputfield/Inputfiled';
->>>>>>>> 9ee2c427729a9f5583386b16984ba8c758d07c9c:src/login/Login.js
+
 
 function App() {
   return (

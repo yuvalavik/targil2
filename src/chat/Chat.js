@@ -1,9 +1,7 @@
 import './Chat.css';
-import logout from './logout.png';
-import profile from './profile.png';
 
-import Profile from './profile.png';
-import Logout from './logout.png';
+import Profile from '../images/profile.png';
+import Logout from '../images/logout.png';
 
 function Chat() {
   return (
@@ -21,11 +19,10 @@ function Chat() {
     <h1 style={{ fontSize: 60 }}>Friends</h1>
   </center>
   <a href="loginFrame.html">
-<<<<<<< HEAD:src/Chat.js
-    <img src= {logout} className="button" alt="Button Image" />
-=======
+
+
   <img src={Logout} className="button" alt="Log out of your account" />
->>>>>>> 9ee2c427729a9f5583386b16984ba8c758d07c9c:src/chat/Chat.js
+
   </a>
   <div className="container">
     <div className="row">
@@ -46,11 +43,8 @@ function Chat() {
                 data-bs-target="#exampleModal"
               >
                 <img
-<<<<<<< HEAD:src/Chat.js
-                  src={profile}
-=======
                   src={Profile}
->>>>>>> 9ee2c427729a9f5583386b16984ba8c758d07c9c:src/chat/Chat.js
+
                   alt="prof"
                   width="15px"
                   className="icon"
