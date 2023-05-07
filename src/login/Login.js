@@ -1,9 +1,10 @@
 
 import './Login.css';
 import Inputfield from '../inputfield/Inputfiled';
+import Subbutton from '../subbutton/Subbuttun';
 
 
-function App() {
+function Login() {
   return (
 <>
 {/* 
@@ -32,13 +33,7 @@ function App() {
             <Inputfield itype = "text" id="name" iplaceholder="Enter name" ilabel = "Username" iicon = "glyphicon glyphicon-user" />
             <Inputfield itype = "password" id="password" iplaceholder="Enter password" ilabel = "Username" iicon = "glyphicon glyphicon-lock" />
             <br/>
-            <div className="row">
-              <div className="col-md-6 col-md-offset-3">
-                <button type="submit" className="btn btn-primary btn-block">
-                  Login
-                </button>
-              </div>
-            </div>
+            <Subbutton itype = "Login"/>
             <center>
               <p>
                 Not registered? <a href="register.html">Click here</a> to
@@ -54,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;

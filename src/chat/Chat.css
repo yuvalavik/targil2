@@ -67,11 +67,8 @@ body {
   flex-wrap: nowrap !important;
 
   border-radius: 25px;
-
-  margin-left: 12% !important;
-
-  margin-right: 12% !important;
   min-height: 70vh;
+  min-width: 60vw;
   
 
 }
@@ -326,10 +323,12 @@ time[datetime] {
 
 
 
-.container{
 
-  max-width: 57%;
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
