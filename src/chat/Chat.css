@@ -2,7 +2,7 @@
 
 body {
 
-  background-image: url("sky.jpg");
+  background-image: url("../sky.jpg");
 
   background-repeat: no-repeat;
 
@@ -16,7 +16,7 @@ body {
 
 .col-md-7{
 
-  background-image: url("chat_back.jpg");
+  background-image: url("../chat_back.jpg");
 
   background-size: 100%;
 
@@ -70,6 +70,9 @@ body {
 
   border-radius: 25px;
 
+  margin-left: 12% !important;
+
+  margin-right: 12% !important;
   
 
 }
@@ -422,6 +425,11 @@ time[datetime] {
   max-width: 5%;
 
 
+
+}
+.padd{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 
 }
 

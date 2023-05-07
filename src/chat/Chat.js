@@ -1,5 +1,8 @@
 import './Chat.css';
 
+import Profile from './profile.png';
+import Logout from './logout.png';
+
 function Chat() {
     return (
 <>
@@ -16,11 +19,11 @@ function Chat() {
     <h1 style={{ fontSize: 60 }}>Friends</h1>
   </center>
   <a href="loginFrame.html">
-    <img src="logout.png" className="button" alt="Button Image" />
+  <img src={Logout} className="button" alt="Log out of your account" />
   </a>
   <div className="container">
     <div className="row">
-      <div className="col-md-5">
+      <div className="col-md-5 padd">
         <div className="list-group">
           <a
             href="#"
@@ -37,7 +40,7 @@ function Chat() {
                 data-bs-target="#exampleModal"
               >
                 <img
-                  src="profile.png"
+                  src={Profile}
                   alt="prof"
                   width="15px"
                   className="icon"
@@ -119,7 +122,7 @@ function Chat() {
           </a>
         </div>
       </div>
-      <div className="col-md-7">
+      <div className="col-md-7 padd">
         <a
           href="#"
           id="chatInfo"
