@@ -4,10 +4,16 @@ function Inputfield({itype, id, iplaceholder, ilabel, iicon}) {
   const [error, setError] = useState(false);
  
   function handleInputChange(event) {
-    if (id === 'password' && event.target.value.length < 8) {
-      setError(true);
+    const passwordRegex = /^(?=.*[A-Z]).{8,}$/; // Regular expression to match a password with at least one capital letter and a length of at least 8 characters
+    const value = event.target.value;
+    if (id === 'password') {
+      if (value.length < 8 || !passwordRegex.test(value)) { // Check if the password meets the criteria
+        setError(true);
+      } else {
+        setError(false);
+      }
     } else if (id === 'confirm-password') {
-      if (event.target.value !== document.getElementById('password').value) {
+      if (value !== document.getElementById('password').value) {
         setError(true);
       } else {
         setError(false);
@@ -30,7 +36,7 @@ function Inputfield({itype, id, iplaceholder, ilabel, iicon}) {
         required
         onChange={handleInputChange}
       />
-      {error && <p>{id === 'password' ? 'Password must be at least 8 characters' : 'Passwords do not match'}</p>}
+      {error && <p>{id === 'password' ? 'Password must be at least 8 characters with at list one capital letter' : 'Passwords do not match'}</p>}
       
     </div>
   );

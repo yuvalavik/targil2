@@ -31,7 +31,7 @@ function Register() {
               
 
               <div className="row">
-                <div className="col-md-6 col-md-offset-3">
+                <div className="ol-6 mx-auto text-center">
                   <img                 
                     id="friendspic"                  
                     className="img-responsive center-block"
@@ -39,6 +39,7 @@ function Register() {
                 </div>
               </div>
               <br />
+            
               <Subbutton itype = "Register"/>
               <center>
                 <p>
