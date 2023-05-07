@@ -1,5 +1,5 @@
 body{
-	background-image:url(sky.jpg);
+	background-image:url(../sky.jpg);
         background-size: cover;
 	background-repeat: no-repeat;
         background-attachment: fixed;
@@ -22,4 +22,7 @@ body{
 }
 .form-group{
 	margin-bottom: 8px;
+}
+#friendspic{
+	height:90px;
 }
