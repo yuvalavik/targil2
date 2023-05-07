@@ -1,5 +1,5 @@
 import './Chat.css';
-
+import Message from '../message/Message';
 import Profile from '../images/profile.png';
 import Logout from '../images/logout.png';
 
@@ -140,21 +140,13 @@ function Chat() {
             10/11/2023
           </time>
         </div>
+
+        <Message side = "user-ms ml-84" text="hellow"/>
+        <Message side = "ml-auto friend-ms" text="hellow my friend" color = "rgba(26, 241, 6, 0.668)"/>
+
         <div className="d-flex flex-row justify-content-start mb-4 mr-8 ms">
           <div
-            className="p-3 ms-3 text-white user-ms ml-84"
-            style={{
-              borderRadius: 15,
-              display: "inline-block",
-              backgroundColor: "rgba(26, 6, 241, 0.575)"
-            }}
-          >
-            <p className="small mb-0">Hello, how are you?.</p>
-          </div>
-        </div>
-        <div className="d-flex flex-row justify-content-start mb-4 mr-8 ms">
-          <div
-            className="p-3 ml-auto ms-3 text-white friend-ms"
+            className="p-3 ms-3 text-white ml-auto friend-ms"
             style={{
               borderRadius: 15,
               display: "inline-block",
