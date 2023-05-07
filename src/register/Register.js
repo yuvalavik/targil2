@@ -1,6 +1,6 @@
 import './Register.css';
 import Inputfield from '../inputfield/Inputfiled';
-import friends from '../friends.jpeg';
+import friends from '../images/friends.jpeg';
 
 function Register() {
   return (
