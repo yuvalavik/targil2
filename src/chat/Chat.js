@@ -1,7 +1,6 @@
 import './Chat.css';
 
 import Profile from '../images/profile.png';
-import Logout from '../images/logout.png';
 import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
 import Logoutbtn from '../logoutbtn/Logoutbtn';

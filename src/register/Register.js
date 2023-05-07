@@ -1,10 +1,9 @@
 import './Register.css';
 import Inputfield from '../inputfield/Inputfiled';
-import friends from '../images/friends.jpeg';
 import Subbutton from '../subbutton/Subbuttun';
 import Imageinput from '../imageinput/Imageinput';
 
-function Register() {
+function Register({setuser}) {
   return (
     <>
     <title>Friends Registration</title>
@@ -40,7 +39,7 @@ function Register() {
               </div>
               <br />
             
-              <Subbutton itype = "Register"/>
+              <Subbutton itype = "Register" setuser={setuser}/>
               <center>
                 <p>
                   Already registered? <a href="loginFrame.html">Click here</a> to
