@@ -1,10 +1,10 @@
 import './Chat.css';
 
-import Profile from './profile.png';
-import Logout from './logout.png';
+import Profile from '../images/profile.png';
+import Logout from '../images/logout.png';
 
 function Chat() {
-    return (
+  return (
 <>
   <link
     rel="stylesheet"
@@ -19,7 +19,10 @@ function Chat() {
     <h1 style={{ fontSize: 60 }}>Friends</h1>
   </center>
   <a href="loginFrame.html">
+
+
   <img src={Logout} className="button" alt="Log out of your account" />
+
   </a>
   <div className="container">
     <div className="row">
@@ -41,6 +44,7 @@ function Chat() {
               >
                 <img
                   src={Profile}
+
                   alt="prof"
                   width="15px"
                   className="icon"
@@ -190,8 +194,7 @@ function Chat() {
     </div>
   </div>
 </>
-
-);
+  );
 }
 
 export default Chat;

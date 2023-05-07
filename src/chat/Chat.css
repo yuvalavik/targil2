@@ -2,7 +2,7 @@
 
 body {
 
-  background-image: url("../sky.jpg");
+  background-image: url("../images/sky.jpg");
 
   background-repeat: no-repeat;
 
@@ -16,7 +16,7 @@ body {
 
 .col-md-7{
 
-  background-image: url("../chat_back.jpg");
+  background-image: url("../images/chat_back.jpg");
 
   background-size: 100%;
 
