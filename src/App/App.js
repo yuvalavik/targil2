@@ -1,6 +1,6 @@
 import './App.css';
-import Inputfield from './inputfield/Inputfiled';
-// import sky from './sky.jpg'
+import Inputfield from '../inputfield/Inputfiled';
+ import sky from './../sky.jpg'
 
 function App() {
   return (
