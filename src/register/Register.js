@@ -32,10 +32,8 @@ function Register() {
 
               <div className="row">
                 <div className="col-md-6 col-md-offset-3">
-                  <img
-                    src={friends}
-                    id="friendspic"
-                    alt="Friends"
+                  <img                 
+                    id="friendspic"                  
                     className="img-responsive center-block"
                   />
                 </div>
