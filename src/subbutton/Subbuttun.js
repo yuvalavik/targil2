@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 function Subbutton({itype}){
 
   function handaleClient(event) {
-    event.preventDefault(); // prevent form submission
+
+     event.preventDefault(); // prevent form submission
   
     const passwordRegex = /^(?=.*[A-Z]).{8,}$/; // Regular expression to match a password with at least one capital letter and a length of at least 8 characters
     const passwordInput = document.getElementById('password');
