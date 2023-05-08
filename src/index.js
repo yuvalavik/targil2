@@ -5,11 +5,11 @@ import './index.css';
 import Register from './register/Register';
 
 const App = () => {
-  const [user, setUser] = useState(null); // Initialize user state as null
+  const [user, setUser] = useState([]); // Initialize user state as null
 
   return (
     <React.StrictMode>
-      <Register setUser={setUser} />
+      <Register setUser={setUser} user={user} />
     </React.StrictMode>
   );
 };

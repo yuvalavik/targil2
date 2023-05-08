@@ -3,7 +3,7 @@ import Inputfield from '../inputfield/Inputfiled';
 import Subbutton from '../subbutton/Subbuttun';
 import Imageinput from '../imageinput/Imageinput';
 
-function Register({setuser}) {
+function Register({setUser,user}) {
   return (
     <>
     <title>Friends Registration</title>
@@ -39,7 +39,7 @@ function Register({setuser}) {
               </div>
               <br />
             
-              <Subbutton itype = "Register" setuser={setuser}/>
+              <Subbutton itype = "Register" setUser={setUser} user={user} />
               <center>
                 <p>
                   Already registered? <a href="loginFrame.html">Click here</a> to
