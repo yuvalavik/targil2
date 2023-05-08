@@ -1,8 +1,10 @@
 import React, { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Subbutton({itype, setUser, user}) {
   const [error, setError] = useState(null); // state to store error message
-
+  const [registerSuccess, setRegisterSuccess] = useState(false);
+  
   function handleClient(event) {
 
     const form = event.target.form;
@@ -32,6 +34,7 @@ function Subbutton({itype, setUser, user}) {
             picture: picture.value
           };
           setUser([...user, newUser]);
+          setRegisterSuccess(true);
         }
       } else { {/* LOGIN*/}
         setError(null); // clear the error
@@ -53,6 +56,12 @@ function Subbutton({itype, setUser, user}) {
           {itype}
         </button>
         {error && <div className="text-danger">{error}</div>} {/* show error message */}
+        {registerSuccess && (
+          <div>
+            <p>Registration successful!</p>
+            <Link to="/"></Link>
+          </div>
+        )}
       </div>
     </div>
   );

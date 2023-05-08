@@ -4,6 +4,7 @@ import Subbutton from '../subbutton/Subbuttun';
 import Imageinput from '../imageinput/Imageinput';
 
 function Register({setUser,user}) {
+  
   return (
     <>
     <title>Friends Registration</title>
