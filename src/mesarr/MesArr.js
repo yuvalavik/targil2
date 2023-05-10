@@ -7,7 +7,7 @@ function MesArr({ curuser }) {
     const containerRef = useRef(null);
     useEffect(() => {
       if (containerRef.current) {
-        console.log("hgf")
+        console.log(curuser.contacts)
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
     }, [curuser.messages]); 

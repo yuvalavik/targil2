@@ -58,10 +58,14 @@ function Subbutton(props) {
             event.preventDefault();
         } else{
           existingUser.contacts.push({ name: "John Doe"});
-          // existingUser.contacts.forEach(contact => {
-          //   console.log(`Name: ${contact.name}`);
-          // });
+
+          existingUser.contacts.push({ name: "John Doe"});
+          existingUser.contacts.forEach(contact => {
+            console.log(`Name: ${contact.name}`);
+          });
+
           props.setcuruser(existingUser);
+          // console.log(props.curuser.contacts);
         }
       }
     } else{
