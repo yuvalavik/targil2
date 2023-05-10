@@ -27,7 +27,7 @@ body {
   border-bottom-right-radius: 25px;
 
   padding: 0%;
-
+  position: relative;
 }
 
 
@@ -52,8 +52,9 @@ body {
   flex-wrap: nowrap !important;
 
   border-radius: 25px;
-  min-height: 70vh;
+  height: 70vh;
   min-width: 60vw;
+  overflow: visible;
   
 
 }
@@ -414,6 +415,8 @@ time[datetime] {
 .padd{
   padding-left: 0 !important;
   padding-right: 0 !important;
+  max-height: 550px;
+  
 }
 
 .mesTime{
@@ -421,11 +424,14 @@ time[datetime] {
     font-size: 9px;
      color: white;
 }
+
+
 .message-container {
-  max-height: 75%;
-  
+    max-height: calc(69vh - 100px); /* Adjusted value based on viewport height */
   overflow-y: scroll;
 }
+
+
 
 
 

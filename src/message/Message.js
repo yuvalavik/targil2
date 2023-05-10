@@ -1,3 +1,5 @@
+
+
 function Message({side, content, time, color}) {
 
   return(
@@ -13,9 +15,8 @@ function Message({side, content, time, color}) {
       <p className="small mb-0">{content}</p>
       <p className="small mb-0 mesTime">{time}</p>
 
-      
     </div>
-  </div>
+    </div>
   );
 }
   

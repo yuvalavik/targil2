@@ -16,7 +16,7 @@ function Message({curuser, setcuruser}) {
     userMes.messages = userMes.messages ? [...userMes.messages, messageWithTime] : [messageWithTime];
     setcuruser(userMes);
     console.log(curuser.messages);
-  }
+    }
     return(
 <div className="input-group-append">
 <button className="btn btn-success" type="button" id="button-send" onClick={sendMessage}>
