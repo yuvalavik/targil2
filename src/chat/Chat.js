@@ -34,7 +34,7 @@ function Chat({curuser, setcuruser,user}) {
             <span className="ml-2">{curuser.displayName}</span>
             <span className="ml-auto">
             
-              <Modal setcuruser={setcuruser}  user={user}/>
+              <Modal setcuruser={setcuruser}  user={user} curuser={curuser}/>
 
             </span>
           </a>
