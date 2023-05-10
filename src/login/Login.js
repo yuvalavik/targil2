@@ -32,7 +32,7 @@ function Login({setcuruser, user}) {
           <form>
 
             <Inputfield itype = "text" id="logname" iplaceholder="Enter name" ilabel = "Username" iicon = "glyphicon glyphicon-user" />
-            <Inputfield itype = "password" id="logpassword" iplaceholder="Enter password" ilabel = "Username" iicon = "glyphicon glyphicon-lock" />
+            <Inputfield itype = "password" id="logpassword" iplaceholder="Enter password" ilabel = "Password" iicon = "glyphicon glyphicon-lock" />
             <br/>
             <Subbutton itype = "Login" setcuruser={setcuruser} user={user}/>
             <center>

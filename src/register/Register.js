@@ -3,9 +3,10 @@ import Inputfield from '../inputfield/Inputfiled';
 import Subbutton from '../subbutton/Subbuttun';
 import Imageinput from '../imageinput/Imageinput';
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 function Register({setUser,user}) {
-  
+  const [image, setimage] = useState({})
   return (
     <>
     <title>Friends Registration</title>
@@ -28,7 +29,7 @@ function Register({setUser,user}) {
             <Inputfield itype = "password" id="password" iplaceholder="Enter password" ilabel = "password" iicon = "glyphicon glyphicon-lock" />
             <Inputfield itype = "password" id="confirm-password" iplaceholder="Confirm password" ilabel = "confirm-password" iicon = "glyphicon glyphicon-lock" />
             <Inputfield itype = "text" id="display-name" iplaceholder="Display name" ilabel = "Display name" iicon = "glyphicon glyphicon-user" />
-            <Imageinput />
+            <Imageinput setimage={setimage}/>
               
 
               <div className="row">
@@ -41,7 +42,7 @@ function Register({setUser,user}) {
               </div>
               <br />
             
-              <Subbutton itype = "Register" setUser={setUser} user={user} />
+              <Subbutton itype = "Register" setUser={setUser} user={user} image={image}/>
               <center>
                 <p>
                   Already registered?
