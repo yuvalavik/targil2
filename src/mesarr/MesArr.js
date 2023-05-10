@@ -3,11 +3,16 @@ import React, { useRef, useEffect } from 'react';
 
 
 function MesArr({ curuser }) {
-    // const mesRef = useRef(null)
-    // useEffect (()=>{
-    //     mesRef.current.scrollTop = mesRef.current.scrollHeight
 
-    // },[curuser.messages])
+    const containerRef = useRef(null);
+    useEffect(() => {
+      if (containerRef.current) {
+        console.log("hgf")
+        containerRef.current.scrollTop = containerRef.current.scrollHeight;
+      }
+    }, [curuser.messages]);
+
+
     console.log(curuser.messages);
   if (!curuser || !curuser.messages || curuser.messages.length === 0) {
     console.log(curuser);
@@ -24,7 +29,20 @@ function MesArr({ curuser }) {
     />
   ));
 
-  return <>{messageComponents}</>;
+  return(
+<div>
+<div className="message-container" ref={containerRef}>
+        <div className="flex-row justify-content-start mb-4 mr-16">
+          <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
+            10/11/2023
+          </time>
+        </div>
+    {messageComponents}
+    </div>
+</div>
+   
+
+  );
 }
 
 export default MesArr;
