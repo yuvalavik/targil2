@@ -53,7 +53,7 @@ function Chat({curuser, setcuruser}) {
           <Chatslist iname="Tal" itime="10/11/2023 11:33 PM" iicon="user-icon-female" />
         </div>
       </div>
-      <div className="col-md-7 padd scroll">
+      <div className="col-md-7 padd ">
         <a
           href="#"
           id="chatInfo"
