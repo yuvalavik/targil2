@@ -1,7 +1,7 @@
 import './Chat.css';
 import Message from '../message/Message';
+import ContactArr from '../contactarr/ContactArr';
 
-import Profile from '../images/profile.png';
 import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
 import Logoutbtn from '../logoutbtn/Logoutbtn';
@@ -10,7 +10,7 @@ import React, { useRef, useEffect } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
-function Chat({curuser, setcuruser}) {
+function Chat({curuser, setcuruser,user}) {
   console.log(curuser);
   return (
 <>
@@ -32,26 +32,13 @@ function Chat({curuser, setcuruser}) {
             <img src={curuser.picture} id='userpic'/>
             <span className="ml-2">{curuser.displayName}</span>
             <span className="ml-auto">
-              <button
-                type="button"
-                className="btn btn-link p-0"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <img
-                  src={Profile}
-
-                  alt="prof"
-                  width="15px"
-                  className="icon"
-                />
-              </button>
-              <Modal />
+            
+              <Modal setcuruser={setcuruser}  user={user}/>
 
             </span>
           </a>
-          <Chatslist iname="Yossi" itime="10/11/2023 12:33 PM" iicon="user-icon-male" />
-          <Chatslist iname="Tal" itime="10/11/2023 11:33 PM" iicon="user-icon-female" />
+          <ContactArr curuser={curuser} />
+
         </div>
       </div>
       <div className="col-md-7 padd ">

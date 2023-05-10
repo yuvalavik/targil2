@@ -18,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login setcuruser={setcuruser} user={user}/>} />
         <Route path="/Register" element={<Register setUser={setUser} user={user} />} />
-        <Route path="/Chat" element={<Chat curuser ={curuser} setcuruser={setcuruser} />} />
+        <Route path="/Chat" element={<Chat curuser ={curuser} setcuruser={setcuruser} user={user}/>} />
       </Routes>
     </BrowserRouter>
   );
