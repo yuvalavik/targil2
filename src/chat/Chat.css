@@ -410,17 +410,17 @@ time[datetime] {
 
 
 }
-.text-muted {
-  color: rgb(255, 0, 0);
-  background-color: #4CAF50;
-}
+
 .padd{
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
 
+.mesTime{
+    float: right;
 }
 .message-container{
- height:400px;
+ height:380px;
  overflow-y:scroll;
   
 }
