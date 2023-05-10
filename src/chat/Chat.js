@@ -1,12 +1,14 @@
 import './Chat.css';
 import Message from '../message/Message';
-import MesArr from '../mesarr/MesArr';
+
 import Profile from '../images/profile.png';
 import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
 import Logoutbtn from '../logoutbtn/Logoutbtn';
 import Send from '../send/Send';
 import React, { useRef, useEffect } from 'react';
+import MesArr from '../mesarr/MesArr';
+
 
 function Chat({curuser, setcuruser}) {
   console.log(curuser.name);
@@ -71,11 +73,6 @@ function Chat({curuser, setcuruser}) {
             aria-describedby="button-send"
           />
           <Send curuser={curuser} setcuruser={setcuruser} />
-          {/* <div className="input-group-append">
-            <button className="btn btn-success" type="button" id="button-send">
-              Send
-            </button>
-          </div> */}
         </div>
       </div>
     </div>

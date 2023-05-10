@@ -13,10 +13,7 @@ function MesArr({ curuser }) {
     }, [curuser.messages]); 
 
 
-    console.log(curuser.messages);
   if (!curuser || !curuser.messages || curuser.messages.length === 0) {
-    console.log(curuser);
-    console.log("ff");
     return null;
   }
 
@@ -30,7 +27,7 @@ function MesArr({ curuser }) {
   ));
 
   return(
-<div>
+
 <div className="message-container" ref={containerRef}>
         <div className="flex-row justify-content-start mb-4 mr-16">
           <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
@@ -39,9 +36,7 @@ function MesArr({ curuser }) {
         </div>
     {messageComponents}
     </div>
-</div>
    
-
   );
 }
 
