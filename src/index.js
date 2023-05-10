@@ -8,6 +8,7 @@ import Chat from './chat/Chat';
 import Register from './register/Register';
 
 
+
 const App = () => {
   const [user, setUser] = useState([]); // Initialize user state as an empty array
   const [curuser, setcuruser] = useState({}); // initial value is an empty object
