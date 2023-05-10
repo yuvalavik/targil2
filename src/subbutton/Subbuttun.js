@@ -57,7 +57,7 @@ function Subbutton(props) {
             setError('invalid username or password');
             event.preventDefault();
         } else{
-          existingUser.contacts.push({ name: "John Doe"});
+          existingUser.contacts.push({ name: "John D"});
           existingUser.contacts.push({ name: "John Doe"});
           existingUser.contacts.forEach(contact => {
             console.log(`Name: ${contact.name}`);
