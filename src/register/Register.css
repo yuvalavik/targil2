@@ -25,6 +25,9 @@ body{
 .form-group{
 	margin-bottom: 8px;
 }
+.rowReg {
+        min-width: 60vw;
+      }
 #friendspic{
 	height:90px;
 }

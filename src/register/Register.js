@@ -2,6 +2,7 @@ import './Register.css';
 import Inputfield from '../inputfield/Inputfiled';
 import Subbutton from '../subbutton/Subbuttun';
 import Imageinput from '../imageinput/Imageinput';
+import { Link } from 'react-router-dom';
 
 function Register({setUser,user}) {
   
@@ -18,7 +19,7 @@ function Register({setUser,user}) {
     </h1>
     <link rel="icon" type="image/jpg" href="message.jpg" />
     <div className="container">
-      <div className="row">
+      <div className="row rowReg">
         <div className="col-md-12">
           <div className="card">
             <h2>Register</h2>
@@ -43,8 +44,10 @@ function Register({setUser,user}) {
               <Subbutton itype = "Register" setUser={setUser} user={user} />
               <center>
                 <p>
-                  Already registered? <a href="loginFrame.html">Click here</a> to
-                  login
+                  Already registered?
+                  <Link to="/">
+                     <span>Click here</span> </Link>
+                     to login
                 </p>
               </center>
             </form>
