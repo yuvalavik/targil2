@@ -11,7 +11,7 @@ import MesArr from '../mesarr/MesArr';
 
 
 function Chat({curuser, setcuruser}) {
-  console.log(curuser.name);
+  console.log(curuser);
   return (
 <>
   <title>Friends</title>
@@ -29,7 +29,7 @@ function Chat({curuser, setcuruser}) {
             id="myInfo"
             className="list-group-item-action d-flex align-items-center me"
           >
-            <div className="user-icon" />
+            <img src={curuser.picture} id='userpic'/>
             <span className="ml-2">{curuser.displayName}</span>
             <span className="ml-auto">
               <button
