@@ -1,4 +1,4 @@
-function Message({side, content, color}) {
+function Message({side, content, time, color}) {
 
   return(
     <div className="d-flex flex-row justify-content-start mb-4 mr-8 ms">
@@ -11,6 +11,9 @@ function Message({side, content, color}) {
       }}
     >
       <p className="small mb-0">{content}</p>
+      <p className="small mb-0 mesTime" style={{ fontSize: '9px', color: 'white' }}>{time}</p>
+
+      
     </div>
   </div>
   );
