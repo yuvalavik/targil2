@@ -418,12 +418,16 @@ time[datetime] {
 
 .mesTime{
     float: right;
+    font-size: 9px;
+     color: white;
 }
-.message-container{
- height:380px;
- overflow-y:scroll;
+.message-container {
+  max-height: 75%;
   
+  overflow-y: scroll;
 }
+
+
 
 
 
