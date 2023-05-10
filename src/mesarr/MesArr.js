@@ -2,8 +2,12 @@ import Message from "../message/Message";
 import React, { useRef, useEffect } from 'react';
 
 function MesArr({ curuser }) {
+    // const mesRef = useRef(null)
+    // useEffect (()=>{
+    //     mesRef.current.scrollTop = mesRef.current.scrollHeight
 
-
+    // },[curuser.messages])
+    console.log(curuser.messages);
   if (!curuser || !curuser.messages || curuser.messages.length === 0) {
     return null;
   }
@@ -17,11 +21,7 @@ function MesArr({ curuser }) {
     />
   ));
 
-  return (
-    <div >
-      {messageComponents}
-    </div>
-  );
+  return <>{messageComponents}</>;
 }
 
 export default MesArr;

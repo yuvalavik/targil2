@@ -61,17 +61,8 @@ function Chat({curuser, setcuruser}) {
         >
           <div className="user-icon-female" />
           <span className="ml-2">Tal</span>
-        </a>
-       
-        <div className="message-container">
-          <div className="flex-row justify-content-start mb-4 mr-16">
-            <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
-            10/11/2023
-            </time>
-          </div>
-        
-          <MesArr curuser={curuser} />
-        </div>
+        </a>  
+        <MesArr curuser={curuser} />
         <div className="input-group mt-auto ">
           <input
             type="text"
