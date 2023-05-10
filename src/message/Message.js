@@ -11,6 +11,7 @@ function Message({side, content, color}) {
       }}
     >
       <p className="small mb-0">{content}</p>
+      <p className="small mb-0 text-muted">{new Date().toLocaleTimeString()}</p>
     </div>
   </div>
   );
