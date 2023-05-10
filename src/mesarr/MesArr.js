@@ -1,8 +1,8 @@
 import Message from "../message/Message";
 import React, { useRef, useEffect } from 'react';
 
-function MesArr({ curuser }) {
 
+function MesArr({ curuser }) {
 
     const containerRef = useRef(null);
     useEffect(() => {
@@ -11,6 +11,7 @@ function MesArr({ curuser }) {
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
     }, [curuser.messages]); 
+
 
   if (!curuser || !curuser.messages || curuser.messages.length === 0) {
     return null;
@@ -25,9 +26,18 @@ function MesArr({ curuser }) {
     />
   ));
 
-  return (
-    <div 
-  )
+  return(
+
+<div className="message-container" ref={containerRef}>
+        <div className="flex-row justify-content-start mb-4 mr-16">
+          <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
+            10/11/2023
+          </time>
+        </div>
+    {messageComponents}
+    </div>
+   
+  );
 }
 
 export default MesArr;
