@@ -1,7 +1,7 @@
 import Profile from '../images/profile.png';
 
 function Modal({setcuruser, user}) {
-  
+
   return (
     <>
       <button
@@ -53,7 +53,7 @@ function Modal({setcuruser, user}) {
                 </button>
               </div>
               <div className="col-md-6 text-right">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={handleAddClick}>
                   Add
                 </button>
               </div>
