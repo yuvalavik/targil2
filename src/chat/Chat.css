@@ -421,12 +421,17 @@ time[datetime] {
 
 .mesTime{
     float: right;
+    font-size: 9px;
+     color: white;
 }
 
+
 .message-container {
-  max-height: 53vh; /* Or whatever value you want */
+    max-height: calc(69vh - 100px); /* Adjusted value based on viewport height */
   overflow-y: scroll;
 }
+
+
 
 
 
