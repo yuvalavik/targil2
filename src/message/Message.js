@@ -13,7 +13,7 @@ function Message({side, content, time, color}) {
       }}
     >
       <p className="small mb-0">{content}</p>
-      <p className="small mb-0 mesTime" style={{ fontSize: '9px', color: 'white' }}>{time}</p>
+      <p className="small mb-0 mesTime">{time}</p>
 
     </div>
     </div>
