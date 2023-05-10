@@ -10,7 +10,7 @@ function MesArr({ curuser }) {
         console.log("hgf")
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
-    }, [curuser.messages]);
+    }, [curuser.messages]); 
 
 
     console.log(curuser.messages);
