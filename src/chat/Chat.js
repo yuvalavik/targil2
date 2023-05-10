@@ -11,7 +11,12 @@ import MesArr from '../mesarr/MesArr';
 
 
 function Chat({curuser, setcuruser,user}) {
-  const [curContact, setcurContact] = useState(); // Initialize user state as an empty array
+  const [curContact, setcurContact] = useState({
+    name: '',
+    icon: ''
+  });
+
+   // Initialize user state as an empty array
   console.log(curuser);
   return (
 <>
