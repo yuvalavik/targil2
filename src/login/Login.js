@@ -2,9 +2,10 @@
 import './Login.css';
 import Inputfield from '../inputfield/Inputfiled';
 import Subbutton from '../subbutton/Subbuttun';
+import { Link } from 'react-router-dom';
 
 
-function Login() {
+function Login({setcuruser, user}) {
   return (
 <>
 {/* 
@@ -24,19 +25,19 @@ function Login() {
   />
   
   <div className="container">
-    <div className="row">
+    <div className="row rowLog">
       <div className="col-md-12">
-        <div className="card">
+        <div className="cardLog">
           <h2>Login</h2>
           <form>
 
-            <Inputfield itype = "text" id="name" iplaceholder="Enter name" ilabel = "Username" iicon = "glyphicon glyphicon-user" />
-            <Inputfield itype = "password" id="password" iplaceholder="Enter password" ilabel = "Username" iicon = "glyphicon glyphicon-lock" />
+            <Inputfield itype = "text" id="logname" iplaceholder="Enter name" ilabel = "Username" iicon = "glyphicon glyphicon-user" />
+            <Inputfield itype = "password" id="logpassword" iplaceholder="Enter password" ilabel = "Username" iicon = "glyphicon glyphicon-lock" />
             <br/>
-            <Subbutton itype = "Login"/>
+            <Subbutton itype = "Login" setcuruser={setcuruser} user={user}/>
             <center>
               <p>
-                Not registered? <a href="register.html">Click here</a> to
+                Not registered?  <Link to="/Register"><span>Click here</span></Link> to
                 register
               </p>
             </center>

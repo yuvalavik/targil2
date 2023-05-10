@@ -24,7 +24,7 @@ function Inputfield({itype, id, iplaceholder, ilabel, iicon}) {
   }
 
   return(
-    <div className="form-group">
+    <div className="form-group" required>
       <label htmlFor={id}>
         <span className={iicon}/> {ilabel}:
       </label>

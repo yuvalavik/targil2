@@ -11,7 +11,7 @@ body {
 
 }
 
-.card {
+.cardLog {
       
       margin-top: 10px;
 
@@ -33,12 +33,9 @@ body {
 
     }
 
-
-
-
-
-
-
+.rowLog {
+  min-width: 60vw;
+}
 
 .App {
   text-align: center;
