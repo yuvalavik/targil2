@@ -27,7 +27,7 @@ body {
   border-bottom-right-radius: 25px;
 
   padding: 0%;
-
+  position: relative;
 }
 
 
@@ -52,8 +52,9 @@ body {
   flex-wrap: nowrap !important;
 
   border-radius: 25px;
-  min-height: 70vh;
+  height: 70vh;
   min-width: 60vw;
+  overflow: visible;
   
 
 }
@@ -414,16 +415,20 @@ time[datetime] {
 .padd{
   padding-left: 0 !important;
   padding-right: 0 !important;
+  max-height: 550px;
+  
 }
 
 .mesTime{
     float: right;
 }
-.message-container{
- height:380px;
- overflow-y:scroll;
-  
+
+.message-container {
+  max-height: 53vh; /* Or whatever value you want */
+  overflow-y: scroll;
 }
+
+
 
 
 
