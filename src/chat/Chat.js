@@ -1,6 +1,6 @@
 import './Chat.css';
 import Message from '../message/Message';
-
+import ContactArr from '../contactarr/ContactArr';
 import Profile from '../images/profile.png';
 import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
@@ -49,8 +49,8 @@ function Chat({curuser, setcuruser}) {
 
             </span>
           </a>
-          <Chatslist iname="Yossi" itime="10/11/2023 12:33 PM" iicon="user-icon-male" />
-          <Chatslist iname="Tal" itime="10/11/2023 11:33 PM" iicon="user-icon-female" />
+          <ContactArr curuser={curuser} />
+
         </div>
       </div>
       <div className="col-md-7 padd ">
