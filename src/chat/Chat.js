@@ -6,6 +6,7 @@ import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
 import Logoutbtn from '../logoutbtn/Logoutbtn';
 import Send from '../send/Send';
+import React, { useRef, useEffect } from 'react';
 
 function Chat({curuser, setcuruser}) {
   console.log(curuser.name);
@@ -67,8 +68,6 @@ function Chat({curuser, setcuruser}) {
         </div>
         
         <MesArr curuser={curuser} />
-        <Message side = "user-ms ml-84" content="hellow" color="rgba(26, 6, 241, 0.575)" />
-        <Message side = "ml-auto friend-ms" content="hellow ffffff" color="rgba(26, 241, 6, 0.668)" />
     </div>
         <div className="input-group mt-auto ">
           <input

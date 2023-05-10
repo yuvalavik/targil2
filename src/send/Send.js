@@ -15,7 +15,7 @@ function sendMessage() {
     //user.messages = [...user.messages, new_msg]{...user}
     setcuruser(userMes);
     // console.log(userMes.messages);
-    // console.log(curuser.messages);
+    console.log(curuser.messages);
     }
     return(
 <div className="input-group-append">
