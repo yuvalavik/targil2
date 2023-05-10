@@ -21,6 +21,7 @@ function Chat({curuser, setcuruser}) {
   <Logoutbtn />
   <div className="container">
     <div className="row rowChat">
+      
       <div className="col-md-5 padd">
         <div className="list-group">
           <a
@@ -61,7 +62,8 @@ function Chat({curuser, setcuruser}) {
         >
           <div className="user-icon-female" />
           <span className="ml-2">Tal</span>
-        </a>   
+        </a> 
+          
         <MesArr curuser={curuser} />
         <div className="input-group mt-auto ">
           <input

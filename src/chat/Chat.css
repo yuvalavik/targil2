@@ -54,7 +54,7 @@ body {
   border-radius: 25px;
   height: 70vh;
   min-width: 60vw;
-  overflow: visible;
+  overflow: hidden; /* Hide any content that overflows outside of the parent container */
   
 
 }
