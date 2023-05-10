@@ -2,7 +2,7 @@ import Chatslist from '../chatslist/Chatslist';
 import React, { useRef, useEffect } from 'react';
 
 
-function contactArr({ curuser }) { 
+function contactArr({ curuser, setcurser, setcurContact,curContact }) { 
 
 
   if (!curuser || !curuser.contacts || curuser.contacts.length === 0) {
@@ -18,6 +18,10 @@ function contactArr({ curuser }) {
       iname={contact.name} 
       itime="10/11/2023 12:33" 
       iicon="user-icon-male"
+      curuser={curuser}
+      setcuruser={setcurser}
+      setcurContact={setcurContact}
+      curContact={curContact}
     />
     
   ));

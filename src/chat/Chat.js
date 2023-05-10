@@ -6,11 +6,12 @@ import Chatslist from '../chatslist/Chatslist';
 import Modal from '../modal/Modal';
 import Logoutbtn from '../logoutbtn/Logoutbtn';
 import Send from '../send/Send';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect,useState } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
 function Chat({curuser, setcuruser,user}) {
+  const [curContact, setcurContact] = useState(); // Initialize user state as an empty array
   console.log(curuser);
   return (
 <>
@@ -37,7 +38,7 @@ function Chat({curuser, setcuruser,user}) {
 
             </span>
           </a>
-          <ContactArr curuser={curuser} />
+          <ContactArr curuser={curuser} setcurser={setcuruser} setcurContact={setcurContact} curContact={curContact}/>
 
         </div>
       </div>
@@ -48,7 +49,7 @@ function Chat({curuser, setcuruser,user}) {
           className="list-group-item list-group-item-action d-flex align-items-center me"
         >
           <div className="user-icon-female" />
-          <span className="ml-2">Tal</span>
+          <span className="ml-2">{curContact}</span>
         </a> 
           
         <MesArr curuser={curuser} />

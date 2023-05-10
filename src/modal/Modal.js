@@ -1,3 +1,4 @@
+
 import Profile from '../images/profile.png';
 import React, { useState } from 'react';
 
@@ -101,5 +102,4 @@ function Modal({setcuruser, user, curuser}) {
     </>
   );
 }
-
 export default Modal;
