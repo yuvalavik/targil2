@@ -1,12 +1,14 @@
 import Logout from "../images/logout.png"
+import { Link } from 'react-router-dom';
+
 function Logoutbtn(){
     return(
-        <a href="loginFrame.html">
+        <Link to="/">
 
 
         <img src={Logout} className="button" alt="Log out of your account" />
       
-        </a>
+       </Link>
     );
 }
 export default Logoutbtn;

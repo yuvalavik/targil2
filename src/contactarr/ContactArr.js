@@ -16,7 +16,7 @@ function contactArr({ curuser }) {
     <Chatslist
       key={index}
       iname={contact.name} 
-      itime="10/11/2023 12:33 PM" 
+      itime="10/11/2023 12:33" 
       iicon="user-icon-male"
     />
     
