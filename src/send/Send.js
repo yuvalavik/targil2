@@ -2,14 +2,18 @@ import React, { useState,useEffect } from 'react';
 
 function Message({curuser, setcuruser}) {
 
-function sendMessage() {
-
-    const mes = document.getElementById('message');
+  function sendMessage() {
+    const date = new Date();
+    const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const mesa = document.getElementById('message');
+    const mes = mesa.value;
+    const messageWithTime = {
+      content: mes,
+      time: time
+    };
     const userMes = {...curuser};
     setcuruser(userMes);
-    
-    
-    userMes.messages = userMes.messages ? [...userMes.messages, mes.value] : [mes.value];
+    userMes.messages = userMes.messages ? [...userMes.messages, messageWithTime] : [messageWithTime];
     setcuruser(userMes);
     console.log(curuser.messages);
     }

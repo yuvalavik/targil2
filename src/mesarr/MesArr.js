@@ -21,7 +21,8 @@ function MesArr({ curuser }) {
     <Message
       key={index}
       side="user-ms ml-84"
-      content={message}
+      content={message.content}
+      time={message.time}
       color="rgba(26, 6, 241, 0.575)"
     />
   ));
