@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './login/Login';
 import Chat from './chat/Chat';
 import Register from './register/Register';
-import Chat from './chat/Chat'
+
 
 
 const App = () => {
