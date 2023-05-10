@@ -54,7 +54,7 @@ body {
   border-radius: 25px;
   height: 70vh;
   min-width: 60vw;
-  overflow: hidden; /* Hide any content that overflows outside of the parent container */
+  overflow: visible;
   
 
 }
@@ -430,7 +430,6 @@ time[datetime] {
     max-height: calc(69vh - 100px); /* Adjusted value based on viewport height */
   overflow-y: scroll;
 }
-
 
 
 
