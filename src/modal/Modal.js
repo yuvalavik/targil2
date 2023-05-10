@@ -2,7 +2,7 @@
 import Profile from '../images/profile.png';
 import React, { useState } from 'react';
 
-function Modal({setcuruser, user, curuser}) {
+function Modal({setcuruser, user, curuser ,setcurContact}) {
   const [error, setError] = useState(null);
   function handleAddClick(event){
 
@@ -30,6 +30,7 @@ function Modal({setcuruser, user, curuser}) {
         document.getElementById('exampleModal').classList.remove('show');
         document.body.classList.remove('modal-open');
         document.querySelector('.modal-backdrop').remove();
+        setcurContact(inputValue);
       }
     }
     
