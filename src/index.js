@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import Register from './register/Register';
+import Chat from './chat/Chat'
 
 const App = () => {
   const [user, setUser] = useState([]); // Initialize user state as null

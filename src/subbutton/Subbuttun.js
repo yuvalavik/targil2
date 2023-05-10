@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 function Subbutton({itype, setUser, user}) {
   const [error, setError] = useState(null); // state to store error message
   const [registerSuccess, setRegisterSuccess] = useState(false);
-  
   function handleClient(event) {
      // prevent form submission
-
+     
 
     const form = event.target.form;
     if (form.checkValidity()) { // Check if all required inputs are filled
