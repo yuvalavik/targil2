@@ -60,7 +60,9 @@ function Chat({ curuser, setcuruser, user, init }) {
           className="list-group-item list-group-item-action d-flex align-items-center me"
         >
 
+
         {curContact.picture && <img src={curContact.picture} className='curcontact'/>}
+
           <span className="ml-2">{curContact.name}</span>
         </a> 
           
