@@ -2,22 +2,21 @@ import Message from "../message/Message";
 import React, { useRef, useEffect } from 'react';
 
 
-function MesArr({ curuser }) {
+function MesArr({ curContact }) {
 
     const containerRef = useRef(null);
     useEffect(() => {
       if (containerRef.current) {
-        console.log(curuser.contacts)
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
-    }, [curuser.messages]); 
+    }, [curContact.messages]); 
 
 
-  if (!curuser || !curuser.messages || curuser.messages.length === 0) {
+  if (!curContact || !curContact.messages || curContact.messages.length === 0) {
     return null;
   }
 
-  const messageComponents = curuser.messages.map((message, index) => (
+  const messageComponents = curContact.messages.map((message, index) => (
     <Message
       key={index}
       side="user-ms ml-84"

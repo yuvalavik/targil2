@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 
-function Message({curuser, setcuruser}) {
+function Message({curuser, setcuruser,  setuser}) {
 
   function sendMessage() {
     const date = new Date();

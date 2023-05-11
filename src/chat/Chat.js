@@ -13,12 +13,13 @@ import MesArr from '../mesarr/MesArr';
 function Chat({ curuser, setcuruser, user }) {
   const [curContact, setcurContact] = useState({
     name: '',
-    picture: ''
+    picture: '',
+    messages: []
   });
 
 
    // Initialize user state as an empty array
-  console.log(curuser);
+  console.log(curuser.contacts);
   return (
 <>
   <title>Friends</title>
@@ -59,7 +60,7 @@ function Chat({ curuser, setcuruser, user }) {
           <span className="ml-2">{curContact.name}</span>
         </a> 
           
-        <MesArr curuser={curuser} />
+        <MesArr curContact={curContact} />
         <div className="input-group mt-auto ">
           <input
             type="text"
@@ -69,7 +70,7 @@ function Chat({ curuser, setcuruser, user }) {
             aria-label="Type a message"
             aria-describedby="button-send"
           />
-          <Send curuser={curuser} setcuruser={setcuruser} />
+          <Send curContact={curContact} setcurContact={setcurContact} />
         </div>
       </div>
     </div>

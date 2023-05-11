@@ -23,7 +23,7 @@ function Modal({setcuruser, user, curuser ,setcurContact}) {
           return;
         }
         const temp = { ...curuser };
-        temp.contacts.push({ name: inputValue });
+        temp.contacts.push({ name: inputValue, messages: [] });
         setcuruser(temp);
         document.getElementById('newname').value = '';
         setError(null);

@@ -42,8 +42,7 @@ function Subbutton(props) {
             password: passwordInput.value,
             displayName: displayNameInput.value,
             picture: props.image,
-            contacts: [],
-            messages: []
+            contacts: []
           };
           props.setUser([...  props.user,newUser]);
           }
