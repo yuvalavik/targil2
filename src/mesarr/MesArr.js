@@ -16,7 +16,6 @@ function MesArr({ curuser, curContact }) {
   }, [curuser, curContact]);
 
   if ((!curuser || !curuser.contacts || curuser.contacts.length === 0)) {
-    console.log(curuser.contacts);
     return null;
   }
 
@@ -24,10 +23,10 @@ function MesArr({ curuser, curContact }) {
     return null;
   }
 
-  console.log(curContact);
+ 
   const contact = curuser.contacts.find(c => c.name === curContact.name);
 
-  console.log(curuser);
+  
   const messageComponents = contact.messages.map((message, index) => (
     <Message
       key={index}

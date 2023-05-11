@@ -26,21 +26,28 @@ function Chatslist({ iname, itime, iicon, iclass, curuser, setcuruser, setcurCon
   }, [curContact]);
 
   const tempUs = user.find(usera => usera.name === iname);
-  // const pic = tempUs.picture;
- 
+  const print = curuser.contacts.find(i => i.name == iname);
+  const lastMessage = print.messages[print.messages.length - 1];
+
 
   return (
     <a
-      href="#"
-      className={`list-group-item list-group-item-action d-flex align-items-center contactss ${isSelected ? 'active' : ''}`}
-      onClick={handleClick}
-    >
-      <img src={tempUs.picture} className='curcontact'/>
-      <span className={`ml-2 chatcontacts `}>{iname}</span>
-      <span className="ml-auto">
-        <time dateTime="YYYY-MM-DDTHH:MM:SS">{itime}</time>
-      </span>
-    </a>
+    href="#"
+    className={`list-group-item list-group-item-action d-flex align-items-center contactss ${isSelected ? 'active' : ''}`}
+    onClick={handleClick}
+  >
+    <img src={tempUs.picture} className='curcontact'/>
+    
+      <span className={`chatcontacts `}>{iname}</span>
+      {lastMessage && (
+        <div className='lastmss'>{lastMessage.content}</div>
+      )}
+      {lastMessage && (
+        <span className='ml-auto'><time  dateTime="YYYY-MM-DDTHH:MM:SS">{lastMessage.time}</time></span>
+      )}
+
+    
+  </a>
   );
 }
 
