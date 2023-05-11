@@ -8,7 +8,7 @@ function contactArr({ curuser, setcurser, setcurContact,curContact, user }) {
 
 
   if (!curuser || !curuser.contacts || curuser.contacts.length === 0) {
-    console.log(curuser.contacts);
+    
     return null;
   }
   

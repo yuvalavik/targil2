@@ -18,7 +18,7 @@ function Chat({ curuser, setcuruser, user }) {
 
 
    // Initialize user state as an empty array
-  console.log(curuser);
+  
   return (
 <>
   <title>Friends</title>
@@ -61,14 +61,6 @@ function Chat({ curuser, setcuruser, user }) {
           
         <MesArr curuser={curuser} />
         <div className="input-group mt-auto ">
-          <input
-            type="text"
-            id='message'
-            className="form-control"
-            placeholder="Type a message"
-            aria-label="Type a message"
-            aria-describedby="button-send"
-          />
           <Send curuser={curuser} setcuruser={setcuruser} />
         </div>
       </div>
