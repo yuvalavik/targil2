@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from 'react';
 
+
 function Message({curuser, setcuruser, curContact, setuser}) {
+
 
   function sendMessage() {
     //const tempCon = curuser.contacts.find(usera => usera.name === curContact.name);
@@ -13,7 +15,9 @@ function Message({curuser, setcuruser, curContact, setuser}) {
       content: mes,
       time: time
     };
+    
     const userMes = {...curuser};
+
     setcuruser(userMes);
     // Find the contact by name
 

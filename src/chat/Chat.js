@@ -10,7 +10,9 @@ import React, { useRef, useEffect,useState } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
+
 function Chat({ curuser, setcuruser, user, init }) {
+
 
   const [curContact, setcurContact] = useState({
     name: '',
@@ -69,7 +71,9 @@ function Chat({ curuser, setcuruser, user, init }) {
         <MesArr curuser={curuser} curContact={curContact} />
         <div className="input-group mt-auto ">
 
+
           <Send curuser={curuser} setcuruser={setcuruser} curContact={curContact} />
+
         </div>
       </div>
     </div>
