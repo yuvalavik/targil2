@@ -7,6 +7,7 @@ function MesArr({ curContact }) {
     const containerRef = useRef(null);
     useEffect(() => {
       if (containerRef.current) {
+
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
     }, [curContact.messages]); 

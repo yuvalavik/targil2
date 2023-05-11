@@ -33,10 +33,12 @@ function Modal({setcuruser, user, curuser ,setcurContact}) {
         const tempCon = user.find(usera => usera.name === inputValue);
         const finaluser={
           name:tempCon.name,
-          picture:tempCon.pictue
+          picture:tempCon.picture
         };
+
         setcurContact(finaluser);
       }
+      
     }
     
     
