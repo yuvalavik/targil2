@@ -1,8 +1,18 @@
 import './Register.css';
 import Inputfield from '../inputfield/Inputfiled';
-import friends from '../images/friends.jpeg';
+import Subbutton from '../subbutton/Subbuttun';
+import Imageinput from '../imageinput/Imageinput';
+import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
-function Register() {
+function Register({setUser,user, init}) {
+
+  const [image, setimage] = useState({})
+  if (init === 0) {
+    // Redirect to home page if curuser is not available
+    window.location.href = '/';
+    return null;
+  }
   return (
     <>
     <title>Friends Registration</title>
@@ -16,7 +26,7 @@ function Register() {
     </h1>
     <link rel="icon" type="image/jpg" href="message.jpg" />
     <div className="container">
-      <div className="row">
+      <div className="row rowReg">
         <div className="col-md-12">
           <div className="card">
             <h2>Register</h2>
@@ -25,43 +35,26 @@ function Register() {
             <Inputfield itype = "password" id="password" iplaceholder="Enter password" ilabel = "password" iicon = "glyphicon glyphicon-lock" />
             <Inputfield itype = "password" id="confirm-password" iplaceholder="Confirm password" ilabel = "confirm-password" iicon = "glyphicon glyphicon-lock" />
             <Inputfield itype = "text" id="display-name" iplaceholder="Display name" ilabel = "Display name" iicon = "glyphicon glyphicon-user" />
-        
+            <Imageinput setimage={setimage}/>
               
-              <div className="form-group">
-                <label htmlFor="picture">
-                  <span className="glyphicon glyphicon-picture" /> Picture:
-                </label>
-                <input
-                  type="file"
-                  id="picture"
-                  name="picture"
-                  className="form-control-file"
-                  accept="image/*"
-                  required=""
-                />
-              </div>
+
               <div className="row">
-                <div className="col-md-6 col-md-offset-3">
-                  <img
-                    src={friends}
-                    id="friendspic"
-                    alt="Friends"
+                <div className="ol-6 mx-auto text-center">
+                  <img                 
+                    id="friendspic"                  
                     className="img-responsive center-block"
                   />
                 </div>
               </div>
               <br />
-              <div className="row">
-                <div className="col-md-6 col-md-offset-3">
-                  <button type="submit" className="btn btn-primary btn-block">
-                    Register
-                  </button>
-                </div>
-              </div>
+            
+              <Subbutton itype = "Register" setUser={setUser} user={user} image={image}/>
               <center>
                 <p>
-                  Already registered? <a href="loginFrame.html">Click here</a> to
-                  login
+                  Already registered?
+                  <Link to="/">
+                     <span>Click here</span> </Link>
+                     to login
                 </p>
               </center>
             </form>
