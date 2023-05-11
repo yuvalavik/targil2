@@ -7,7 +7,6 @@ function Chatslist({ iname, itime, iicon, iclass, curuser, setcuruser, setcurCon
     event.preventDefault();
     setcurContact(iname);
     setIsSelected(true);
-    updateSelectedStatus();
   }
 
   // Update isSelected state of other components

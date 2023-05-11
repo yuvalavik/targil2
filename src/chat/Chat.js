@@ -38,7 +38,7 @@ function Chat({curuser, setcuruser,user}) {
 
             </span>
           </a>
-          <ContactArr curuser={curuser} setcurser={setcuruser} setcurContact={setcurContact} curContact={curContact}/>
+          <ContactArr curuser={curuser} setcurser={setcuruser} setcurContact={setcurContact} curContact={curContact} user={user}/>
 
         </div>
       </div>
