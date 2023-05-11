@@ -1,8 +1,9 @@
 import React, { useState,useEffect } from 'react';
 
-function Message({curuser, setcuruser,  setuser}) {
+function Message({curuser, setcuruser, curContact, setuser}) {
 
   function sendMessage() {
+    //const tempCon = curuser.contacts.find(usera => usera.name === curContact.name);
     const mesa = document.getElementById('message');
     const mes = mesa.value.trim(); // trim any leading/trailing whitespace
     if (!mes) return; // if message is empty, do nothing
@@ -14,7 +15,15 @@ function Message({curuser, setcuruser,  setuser}) {
     };
     const userMes = {...curuser};
     setcuruser(userMes);
-    userMes.messages = userMes.messages ? [...userMes.messages, messageWithTime] : [messageWithTime];
+    // Find the contact by name
+
+    if (!(!curuser || !curuser.contacts || curuser.contacts.length === 0)) { 
+    const contact = userMes.contacts.find(c => c.name === curContact.name);
+    if (contact) {      
+        contact.messages = contact.messages ? [...contact.messages, messageWithTime] : [messageWithTime];
+      }
+    }
+    //userMes.contactsmessages 
     setcuruser(userMes);
     mesa.value = ""; 
   }

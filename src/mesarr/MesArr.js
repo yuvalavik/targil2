@@ -2,22 +2,33 @@ import Message from "../message/Message";
 import React, { useRef, useEffect } from 'react';
 
 
-function MesArr({ curContact }) {
+function MesArr({ curuser, curContact }) {
+  const containerRef = useRef(null);
 
-    const containerRef = useRef(null);
-    useEffect(() => {
-      if (containerRef.current) {
+  useEffect(() => {
+    if ((!curuser || !curuser.contacts || curuser.contacts.length === 0) || !curContact || curContact.name === '') {
+      return;
+    }
 
-        containerRef.current.scrollTop = containerRef.current.scrollHeight;
-      }
-    }, [curContact.messages]); 
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
+  }, [curuser, curContact]);
 
-
-  if (!curContact || !curContact.messages || curContact.messages.length === 0) {
+  if ((!curuser || !curuser.contacts || curuser.contacts.length === 0)) {
+    console.log(curuser.contacts);
     return null;
   }
 
-  const messageComponents = curContact.messages.map((message, index) => (
+  if (!curContact || curContact.name === '') {
+    return null;
+  }
+
+  console.log(curContact);
+  const contact = curuser.contacts.find(c => c.name === curContact.name);
+
+  console.log(curuser);
+  const messageComponents = contact.messages.map((message, index) => (
     <Message
       key={index}
       side="user-ms ml-84"
@@ -27,17 +38,15 @@ function MesArr({ curContact }) {
     />
   ));
 
-  return(
-
-<div className="message-container" ref={containerRef}>
-        <div className="flex-row justify-content-start mb-4 mr-16">
-          <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
-            10/11/2023
-          </time>
-        </div>
-    {messageComponents}
+  return (
+    <div className="message-container" ref={containerRef}>
+      <div className="flex-row justify-content-start mb-4 mr-16">
+        <time dateTime="YYYY-MM-DDTHH:MM:SS" id="chatDate" className="">
+          10/11/2023
+        </time>
+      </div>
+      {messageComponents}
     </div>
-   
   );
 }
 
