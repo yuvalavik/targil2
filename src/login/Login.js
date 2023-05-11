@@ -3,9 +3,15 @@ import './Login.css';
 import Inputfield from '../inputfield/Inputfiled';
 import Subbutton from '../subbutton/Subbuttun';
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 
-function Login({setcuruser, user}) {
+function Login({setcuruser, user, setinit}) {
+
+  useEffect(() => {
+    setinit(1);
+  }, []);
+  
   return (
 <>
 {/* 

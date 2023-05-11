@@ -23,10 +23,10 @@ function MesArr({ curuser, curContact }) {
     return null;
   }
 
- 
+
   const contact = curuser.contacts.find(c => c.name === curContact.name);
 
-  
+
   const messageComponents = contact.messages.map((message, index) => (
     <Message
       key={index}

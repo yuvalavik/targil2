@@ -10,14 +10,21 @@ import React, { useRef, useEffect,useState } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
-function Chat({ curuser, setcuruser, user,chats,setChats }) {
+
+function Chat({ curuser, setcuruser, user, init }) {
+
+
   const [curContact, setcurContact] = useState({
     name: '',
     picture: '',
     messages: []
   });
 
-
+  if (init === 0) {
+    // Redirect to home page if curuser is not available
+    window.location.href = '/';
+    return null;
+  }
    // Initialize user state as an empty array
   return (
 <>

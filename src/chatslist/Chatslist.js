@@ -5,7 +5,6 @@ function Chatslist({ iname, itime, iicon, iclass, curuser, setcuruser, setcurCon
 
   function handleClick(event) {
     event.preventDefault();
-    
     const temp = user.find(usera => usera.name === iname);
     setcurContact(temp);
     setIsSelected(true);
