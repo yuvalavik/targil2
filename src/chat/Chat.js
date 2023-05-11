@@ -10,7 +10,7 @@ import React, { useRef, useEffect,useState } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
-function Chat({ curuser, setcuruser, user }) {
+function Chat({ curuser, setcuruser, user,chats,setChats }) {
   const [curContact, setcurContact] = useState({
     name: '',
     picture: ''
@@ -61,7 +61,7 @@ function Chat({ curuser, setcuruser, user }) {
           
         <MesArr curuser={curuser} />
         <div className="input-group mt-auto ">
-          <Send curuser={curuser} setcuruser={setcuruser} />
+          <Send curuser={curuser} setcuruser={setcuruser} chats={chats} setChats={setChats} curContact={curContact}/>
         </div>
       </div>
     </div>

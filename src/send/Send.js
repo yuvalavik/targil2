@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 
-function Message({curuser, setcuruser}) {
+function Message({curuser, setcuruser,chats ,setChats}) {
 
   function sendMessage() {
     const mesa = document.getElementById('message');
@@ -12,8 +12,8 @@ function Message({curuser, setcuruser}) {
       content: mes,
       time: time
     };
+    
     const userMes = {...curuser};
-    setcuruser(userMes);
     userMes.messages = userMes.messages ? [...userMes.messages, messageWithTime] : [messageWithTime];
     setcuruser(userMes);
     mesa.value = ""; 
