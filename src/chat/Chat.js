@@ -18,7 +18,7 @@ function Chat({ curuser, setcuruser, user }) {
 
 
    // Initialize user state as an empty array
-  console.log(curuser);
+  
   return (
 <>
   <title>Friends</title>
@@ -55,20 +55,12 @@ function Chat({ curuser, setcuruser, user }) {
           className="list-group-item list-group-item-action d-flex align-items-center me"
         >
 
-        <img src={curContact.picture} id='userpic'/>
+        <img src={curContact.picture} className='curcontact'/>
           <span className="ml-2">{curContact.name}</span>
         </a> 
           
         <MesArr curuser={curuser} />
         <div className="input-group mt-auto ">
-          <input
-            type="text"
-            id='message'
-            className="form-control"
-            placeholder="Type a message"
-            aria-label="Type a message"
-            aria-describedby="button-send"
-          />
           <Send curuser={curuser} setcuruser={setcuruser} />
         </div>
       </div>

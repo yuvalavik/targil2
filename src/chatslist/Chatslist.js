@@ -9,7 +9,6 @@ function Chatslist({ iname, itime, iicon, iclass, curuser, setcuruser, setcurCon
     const temp = user.find(usera => usera.name === iname);
     setcurContact(temp);
     setIsSelected(true);
-    updateSelectedStatus();
   }
 
   // Update isSelected state of other components
@@ -36,7 +35,7 @@ function Chatslist({ iname, itime, iicon, iclass, curuser, setcuruser, setcurCon
       className={`list-group-item list-group-item-action d-flex align-items-center contactss ${isSelected ? 'active' : ''}`}
       onClick={handleClick}
     >
-      <img src={tempUs.picture} className='userspic'/>
+      <img src={tempUs.picture} className='curcontact'/>
       <span className={`ml-2 chatcontacts `}>{iname}</span>
       <span className="ml-auto">
         <time dateTime="YYYY-MM-DDTHH:MM:SS">{itime}</time>

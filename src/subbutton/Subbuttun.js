@@ -58,7 +58,7 @@ function Subbutton(props) {
             event.preventDefault();
         } else{
           props.setcuruser(existingUser);
-          // console.log(props.curuser.contacts);
+          
         }
       }
     } else{
@@ -66,9 +66,7 @@ function Subbutton(props) {
       event.preventDefault();
     }
   }
-  useEffect(() => {
-    console.log('New user added:', props.user);
-  }, [props.user]);
+
 
 
   return(
