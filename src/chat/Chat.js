@@ -13,12 +13,12 @@ import MesArr from '../mesarr/MesArr';
 function Chat({ curuser, setcuruser, user }) {
   const [curContact, setcurContact] = useState({
     name: '',
-    picture: ''
+    picture: '',
+    messages: []
   });
 
 
    // Initialize user state as an empty array
-  
   return (
 <>
   <title>Friends</title>
@@ -55,13 +55,16 @@ function Chat({ curuser, setcuruser, user }) {
           className="list-group-item list-group-item-action d-flex align-items-center me"
         >
 
-           {curContact.picture && <img src={curContact.picture} className='curcontact'/>}
+
+        {curContact.picture && <img src={curContact.picture} className='curcontact'/>}
+
           <span className="ml-2">{curContact.name}</span>
         </a> 
           
-        <MesArr curuser={curuser} />
+        <MesArr curuser={curuser} curContact={curContact} />
         <div className="input-group mt-auto ">
-          <Send curuser={curuser} setcuruser={setcuruser} />
+
+          <Send curuser={curuser} setcuruser={setcuruser} curContact={curContact} />
         </div>
       </div>
     </div>
