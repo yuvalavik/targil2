@@ -10,8 +10,14 @@ import React, { useRef, useEffect,useState } from 'react';
 import MesArr from '../mesarr/MesArr';
 
 
-function Chat({curuser, setcuruser,user}) {
-  const [curContact, setcurContact] = useState(); // Initialize user state as an empty array
+function Chat({ curuser, setcuruser, user }) {
+  const [curContact, setcurContact] = useState({
+    name: '',
+    picture: ''
+  });
+
+
+   // Initialize user state as an empty array
   console.log(curuser);
   return (
 <>
@@ -48,8 +54,9 @@ function Chat({curuser, setcuruser,user}) {
           id="chatInfo"
           className="list-group-item list-group-item-action d-flex align-items-center me"
         >
-          <div className="user-icon-female" />
-          <span className="ml-2">{curContact}</span>
+
+        <img src={curContact.picture} className='curcontact'/>
+          <span className="ml-2">{curContact.name}</span>
         </a> 
           
         <MesArr curuser={curuser} />

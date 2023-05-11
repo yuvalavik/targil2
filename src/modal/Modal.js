@@ -30,8 +30,15 @@ function Modal({setcuruser, user, curuser ,setcurContact}) {
         document.getElementById('exampleModal').classList.remove('show');
         document.body.classList.remove('modal-open');
         document.querySelector('.modal-backdrop').remove();
-        setcurContact(inputValue);
+        const tempCon = user.find(usera => usera.name === inputValue);
+        const finaluser={
+          name:tempCon.name,
+          picture:tempCon.picture
+        };
+
+        setcurContact(finaluser);
       }
+      
     }
     
     

@@ -2,7 +2,9 @@ import Chatslist from '../chatslist/Chatslist';
 import React, { useRef, useEffect } from 'react';
 
 
-function contactArr({ curuser, setcurser, setcurContact,curContact,user }) { 
+
+function contactArr({ curuser, setcurser, setcurContact,curContact, user }) { 
+
 
 
   if (!curuser || !curuser.contacts || curuser.contacts.length === 0) {
