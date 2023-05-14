@@ -2,7 +2,7 @@
 
 this is the second part of exercise 1 in Advanced Programming 2 course.
 
-This is a simple chat application called 'Friends' built using React for real-time communication between users. The app allows users to register and create an account, log in, and start a conversation with other users that also have an acount.
+This is a simple chat application called 'Friends' built using React for real-time communication between users.<br /> The app allows users to register and create an account, log in, and start a conversation with other users that also have an acount.
 
 # There are 3  pages:
 
