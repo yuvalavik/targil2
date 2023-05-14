@@ -27,3 +27,14 @@ This page is the chat page where you can talk and see your chats with your frien
 you can press the add contact button and than add new conversation with new friend(only if they also have an acount).
 
 you can also switch conversations by pressing the person that you want to talk to(you can see that the friend who currently talk to be with blue background in the chats list)
+
+
+##### How to run:
+
+      a.Clone the repository.
+      
+      b. Install the required dependencies by running npm install in the root directory.
+      
+      c. Run the app using npm start.
+      
+than the browser will open the app it the login page and you will able to register and start chating with your friends.
