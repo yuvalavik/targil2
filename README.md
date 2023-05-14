@@ -1,6 +1,7 @@
 # Ex1 partA
 
-this is the first part of exercise 1 in Advanced Programming 2 course.
+this is the second part of exercise 1 in Advanced Programming 2 course.
+This is a simple chat application built using React and Firebase for real-time communication between users. The app allows users to create an account, log in, and start a conversation with other users.
 
 # There are 3 html pages:
 
