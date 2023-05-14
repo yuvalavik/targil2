@@ -33,8 +33,10 @@ you can also switch conversations by pressing the person that you want to talk t
 
       a.Clone the repository.
       
-      b. Install the required dependencies by running 'npm install' in the root directory.
+      b.Open a terminal and navigate to the root directory of the project.
       
-      c. Run the app using 'npm start'.
+      c. Install the required dependencies by running 'npm install' in the root directory.
+      
+      d. Run the app using 'npm start'.
       
 than the browser will open the app it the login page and you will able to register and start chating with your friends.
