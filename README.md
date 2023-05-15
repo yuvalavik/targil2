@@ -1,4 +1,4 @@
-# Ex1 partA
+# Ex1 part B
 
 this is the second part of exercise 1 in Advanced Programming 2 course.
 
